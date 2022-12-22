@@ -4,8 +4,9 @@
 # Для n=4 -> [2, 2.25, 2.37, 2.44]
 # Сумма 9.06
 
+
 number = int(input("Введите число:"))
 my_list = []
-my_list = [round((1+1/i)**i, 3) for i in range(1, n+1)]
-my_list.append(i)
-print('Последовательность: (*my_list)\n Сумма: {round(sum(*my_list), 3)}')
+my_list = [round((1+1/number)**number, 2) for number in range(1, number+1)]
+print(f'Последовательность:{my_list}') 
+print(f'Сумма: {round(sum(my_list),2)}')
