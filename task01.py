@@ -5,10 +5,10 @@
 # 6782 -> 23
 # 0,56 -> 11
 
-number = float(input("Введите  вещественное число:"))
+number_str = (input("Введите  вещественное число:"))
+number = int(number_str.replace(',',''))
 sum = 0
 while ( number != 0):
-    p = number % 10
-    sum = sum + p
+    sum = sum + number % 10
     number = number // 10
 print("Сумма цифр числа равна: ", sum)
